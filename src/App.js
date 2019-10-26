@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -18,6 +20,12 @@ function App() {
         >
           Learn React
         </a>
+        <Button variant="contained" color="primary">
+          Hello World
+        </Button>
+        <Button variant="contained">
+          {process.env.NODE_ENV}
+        </Button>
       </header>
     </div>
   );
